@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wind Field</title>
+    <meta charset="utf-8">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        #map {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: #333;
+        }
+    </style>
+    <link rel="stylesheet" href="lib/leaflet-1.0.3.css" />
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="lib/leaflet-1.0.3.js"></script>
+    <script>
+        let leafletMap = L.map('map', {
+            worldCopyJump: true,
+            renderer: L.canvas(),
+            center: [36, 114],
+            zoom: 5,
+            minZoom: 3,
+            maxZoom: 17
+        })
+        L.tileLayer('https://api.mapbox.com/styles/v1/qiuzhilin/cj5rvq1bd35n02rohxp0vuwm7/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicWl1emhpbGluIiwiYSI6ImNqNHoyNDN4dTF6c3gyd3BoNGR2bmM0N2YifQ.jfV42bsQ5XKYP3OF1MvGqw').addTo(leafletMap);
+        
+    </script>
+    <script src="lib/L.CanvasLayer.js"></script>
+    <script src="lib/d3.min.js"></script>
+    <script src="lib/marchingsquares-isobands.min.js"></script>
+
+    <script src="overlay.js"></script>
+    <script src="wind.js"></script>
+    <script src="index.js?11"></script>
+</body>
+
+</html>
