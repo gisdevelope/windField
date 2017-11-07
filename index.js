@@ -45,32 +45,42 @@ function b64HmacSHA1(key, str) {
 //// 获取最新服务器数据的url及处理
 var PRIVATE_KEY = 'lanpai';
 var APPID = 'fx8fj7ycj8fhbgdt';
-var url = 'http://scapi.weather.com.cn/weather/micaps/windfile?type=1000';
-var myDate = new Date();
-var date = myDate.format('yyyyMMdd');
-url += (~url.indexOf('?') ? '&' : '?') + 'date=' + date + '&appid=' + APPID;
-b64HmacSHA1(PRIVATE_KEY, url).then(function (key) {
-    key = encodeURIComponent(key);
-    var out = url.replace(/appid=.*/, 'appid=' + APPID.substr(0, 6)) + '&key=' + key;
-    fetchData(out);
-});
+// var url = 'http://scapi.weather.com.cn/weather/micaps/windfile?type=1000';
+// var myDate = new Date();
+// var date = myDate.format('yyyyMMdd');
+// url += (~url.indexOf('?') ? '&' : '?') + 'date=' + date + '&appid=' + APPID;
+// b64HmacSHA1(PRIVATE_KEY, url).then(function (key) {
+//     key = encodeURIComponent(key);
+//     var out = url.replace(/appid=.*/, 'appid=' + APPID.substr(0, 6)) + '&key=' + key;
+//     fetchData(out);
+// });
+var url= `http://scapi.weather.com.cn/weather/getwindmincas?type=WD&test=ncg`
+fetchData(url)
 ;function fetchData(url) {
     $.get(url,function (res) {
         var data = JSON.parse(res);
+        var arr = []
+        for (var i = 0; i < data.field.length; i++) {
+            arr.push(data.field[i])
+            arr.push(0)
+        }
+        data.field = arr
         field = VectorField.read(data, true
         // 经度-180和180是一样的
-        );field.field.unshift(field.field[field.w - 1]);
+        );
+        field.field.unshift(field.field[field.w - 1]);
         field.x0 = -180;
         field.w += 1;
         overlay = createOverlay(field);
-        L.canvasLayer().delegate({
-            onDrawLayer: function onDrawLayer(info) {
-                initWindField(info.canvas, info.layer._map);
-            }
-        }).addTo(leafletMap
+        // L.canvasLayer().delegate({
+        //     onDrawLayer: function onDrawLayer(info) {
+        //         initWindField(info.canvas, info.layer._map);
+        //     }
+        // }).addTo(leafletMap)
 
         // 两个 色彩canvas，一个本来的，一个复制平移的（投影后x加上总宽度）
-        );L.canvasLayer().delegate({
+        
+        ;L.canvasLayer().delegate({
             onDrawLayer: function onDrawLayer(info) {
                 initWindOverlay(info.canvas, info.layer._map);
             }
