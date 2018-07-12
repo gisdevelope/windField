@@ -80,11 +80,11 @@ fetchData(url)
 
         // 两个 色彩canvas，一个本来的，一个复制平移的（投影后x加上总宽度）
         
-        ;L.canvasLayer().delegate({
-            onDrawLayer: function onDrawLayer(info) {
-                initWindOverlay(info.canvas, info.layer._map);
-            }
-        }).addTo(leafletMap);
+        // ;L.canvasLayer().delegate({
+        //     onDrawLayer: function onDrawLayer(info) {
+        //         initWindOverlay(info.canvas, info.layer._map);
+        //     }
+        // }).addTo(leafletMap);
     })
 }
 
