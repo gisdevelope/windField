@@ -1,0 +1,432 @@
+body{
+	width:100%;
+	height:100%;
+	color:#fff;
+}
+
+/*头部*/
+.head{
+	box-sizing:border-box;
+	height:3.75rem;
+	background:#0b1522;
+	border-bottom: 1px solid #3c444e;
+	box-shadow: 0 2px 20px -0px #172d4e;
+}
+.head>div{
+	height:100%;
+	width:3.75rem;	
+	float: left;
+	border-right:1px solid #3c444e;
+	border-size:border-box;
+	-webkit-box-sizing:border-box;
+}
+.head>div>span{
+	display:block;
+	width:1.25rem;
+	height:1.25rem;
+	margin:1.25rem;
+}
+.head>h1{
+	font-size:1.35rem;
+	text-indent:1.35rem;
+	line-height:3.75rem;
+	color: #fff;
+}
+.particCont{
+	/*height:calc(54rem - 3.75rem);*/
+	height:calc(100% - 3.75rem);
+	width:100%;
+	background:url('../img/bg.png') no-repeat;
+}
+.addres-time>i,.table-masg>div>i,.live>ul>li>i,h4>i{
+	font-size:0.6rem;
+	color: #9f9f9f;
+}
+.defultext>div,.table-masg>div>b,.live>ul>li>b,.particT>div>ul>li>p,.defultext>div>span,.particT>div>ul>li>i,.particT>div>ul>li>b{
+	font-size:0.75rem; /*30px*/
+}
+h4,.particB>ul>li>h5>i,.addres-time,.defultext>div>span{
+	color: #9f9f9f;
+}
+h4,.particB>ul>li>h5,.live>div,.weath2>b{
+	font-size:0.9rem;/*36px*/
+}
+/*左侧信息*/
+.address{
+	width:24.35rem;
+	border-right:1px solid #0388b3;
+	padding:0.9rem;
+	height:100%;
+	box-sizing:border-box;
+	box-sizing:-webkit-border-box;
+}
+.address>h4{
+	margin-top:0.35rem;
+}
+/*右侧详情*/
+.particweather{
+	width:calc(100% - 24.35rem);
+	height:100%;
+	background:rgba(7,18,29,0.5);
+	position:relative;
+}
+.currentweather{
+	text-align:center;
+}
+.currentweather>h6{
+	font-size:0.9rem;
+	margin:3rem 0;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;  
+    justify-content: center;
+}
+.currentweather>h6>i{
+	width:1rem;
+	height:1rem;
+	background:url("../img/定位.png") no-repeat left center;
+	background-size: 0.725rem 0.95rem;
+	margin-top:0.1rem
+}
+.addres-time>i{
+	color:#9f9f9f;
+	line-height: 1.5rem;
+}
+.weathers{
+	margin:2rem 0;
+	text-align:center;
+	position:relative;
+}
+.weathers>div{
+	width:5.0rem;
+	height:5.0rem;
+	background-size:100%;
+	position:absolute;
+	left:50%;
+	top:0;
+	margin-left: -2.5rem;
+}
+.weathers>h2{
+	padding-top:6rem;
+	font-size:2.2rem;
+	margin: 0.5rem 0;
+}
+.weathers>p{
+	font-size:1.325rem;
+	color:#dedfe1;
+}
+.defultext,.live{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;  
+    justify-content: center;  
+    margin:2rem 0;
+}
+.defultext>div{
+	border:1px solid #363d49;
+	margin-left:-1px;
+	border-top:none;
+	border-bottom:none;
+	padding:0.4rem 1.75rem;
+	text-align:center;
+}
+
+.defultext>div>span{
+	background:url("../img/最高温度.png") no-repeat left 50%;
+	background-size:0.375rem 0.475rem;
+	padding-left:0.5rem;
+}
+.defultext>div>p{
+	margin-top:0.4rem;
+}
+.defultext>div>span.diwen{
+	background:url("../img/最低温度.png") no-repeat left 50%;
+	background-size:0.375rem 0.475rem;
+}
+.weath2{
+	width:7.5rem;
+	height:1.5rem;
+	border:1px solid #4e587e;
+	background:rgba(78,88,126,0.5);
+	border-radius:5px;
+	margin:3rem auto;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;  
+    justify-content: center;
+}
+.weath2>i{
+	width:0.8rem;
+	height:0.8rem;
+	background:#00ff00;
+	border-radius:50%;
+	margin-top: 0.35rem;
+	margin-right:0.2rem;
+}
+.weath2>b{
+	margin-top: 0.15rem;
+}
+.live>div{
+	color: #fde6db;
+	margin-right:3.5rem;
+}
+.live>div:last-child{
+	margin-right:0;
+}
+.live>div>div{
+	width:5.0rem;
+	height:5.0rem;
+	border-radius:50%;
+	background:rgba(255,255,255,0.05);
+	box-sizing: border-box;
+	text-align:center;
+	padding: 1rem;
+}
+.live>div>p{
+	margin: 0.5rem 0;
+}
+.table-masg{
+	text-align:left;
+	padding:0rem 0.5rem;
+}
+.table-masg>div{
+	float:left;
+	height:1.05rem;
+	line-height:0.8rem;
+	width:calc(50% - 2.25rem);
+	padding-left:1.75rem;
+	margin-left:0.5rem;
+	padding-bottom:0.5rem;
+}
+.table-masg>div.wd{
+	background:url("../img/monitor/列表－温度.png") no-repeat left top;
+	background-size:1.05rem 1.05rem;
+}
+.table-masg>div.jsl{
+	background:url("../img/monitor/列表－降水量.png") no-repeat left top;
+	background-size:1.05rem 1.05rem;
+}
+.table-masg>div.sd{
+	background:url("../img/monitor/列表－相对湿度.png") no-repeat left top;
+	background-size:1.05rem 1.05rem;
+}
+.table-masg>div.njd{
+	background:url("../img/monitor/列表－能见度.png") no-repeat left top;
+	background-size:1.05rem 1.05rem;
+}
+.table-masg>div.fs{
+	background:url("../img/monitor/列表－风向风速.png") no-repeat left top;
+	background-size:1.05rem 1.05rem;
+}
+.table-masg>div.qy{
+	background:url("../img/monitor/列表－气压.png") no-repeat left top;
+	background-size:1.05rem 1.05rem;
+}
+.table-masg>div>i{
+	display:inline-block;
+	width:3rem;
+}
+.particT{
+	height:10rem;
+	width:calc(100% - 2.5rem);
+	position:relative;
+}
+.particB,.particT,.curve{
+	padding:0 1.25rem;
+}
+.particweather>div>h4{
+	margin: 1.25rem 0 0.8rem;
+}
+.particT>div>ul>li{
+	width:3.0rem;
+	float:left;
+	text-align: center;
+	margin-right:1rem;
+}
+.particT>div>ul>li:last-child{
+	margin-right:0;
+}
+.particT>div>ul>li>i,.particT>div>ul>li>b,.particT>div>ul>li>div,.particT>div>ul>li>p{
+	display:block;
+	margin-bottom:0.5rem;
+}
+.particT>div>ul>li>div{
+	height:2rem;
+}
+.curve{
+	border-top:1px solid #0388b3;
+	border-bottom:1px solid #0388b3;
+	position:relative;
+	height:19.0rem;
+	padding:1.25rem 0;
+	box-sizing: border-box;
+}
+.curve>h4{
+	position:absolute;
+	left:1.25rem;
+	top:0rem;
+}
+#curve_wd{
+	width:calc(100% - 2.5rem);
+	height:100%;
+	padding:0 1.25rem;
+}
+.tip{
+	font-size: 0.55rem;
+}
+.tip>div{
+	margin-right:0.75rem;
+}
+.tip>div:last-child{
+	margin-right:0;
+}
+.tip-icon{
+	width:0.85rem;
+	height:0.55rem;
+	margin-top: 0.3rem;
+}
+.tip-icon2{
+	width:1rem;
+	height:1rem;
+}
+.particB>ul>li>h5{
+    position: relative;
+}
+.particB>ul>li>span{
+	position:absolute;
+	left:0;
+	top:0;
+	width:0; 
+    height:0; 
+    border-right: 3rem solid transparent;
+    border-bottom: 3rem solid transparent;
+    border-top: 3rem solid #085bb3;
+}
+.particB>ul{
+	position:relative;
+}
+.particB>ul>li{
+	position:relative;
+	float:left;
+	width:8.69rem;
+	height:7.5rem;
+	border:1px solid #626262;
+	box-sizing:border-box;
+	padding:0.3rem;
+	margin-right: -1px;
+    margin-top: -1px;
+    background:#091934;
+}
+.rect{
+	width:0.6rem;
+	height:0.6rem;
+	margin: 0.3rem;
+    border-radius: 50%;
+}
+.particB-table{
+	position:absolute;
+	width:6.6rem;
+	height:4.4rem;
+	left:50%;
+	top:50%;
+	margin-left:-3.3rem;
+	margin-top:-1.5rem;
+}
+.particB-table>div{
+	position:absolute;
+}
+.particB-table>span{
+	position:absolute;
+	width:5.6rem;
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	border-top:1px solid #2a384f;
+	top:50%;
+	left:0.8rem;
+}
+.particB-table>div>div{
+	width:1.5rem;
+	height:1.5rem;
+	margin-left:0.3rem;
+}
+.weathe-left{
+	left:0;
+	top:0;
+}
+.weathe-right{
+	right:0;
+	bottom:0;
+}
+
+/*.particB>ul>li.masgTip{
+	background:#fff;
+	width:27.72rem;
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+.masgTip>div>.particB-table{
+    position: relative;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    top: 0;
+    left: 0;
+}
+.masgTip>div>.particB-table>span{
+	border-top:1px solid #d2d2d2;
+}
+.masgTip{
+	color:#000;
+}
+.close{
+	width:0.8rem;
+	height:0.8rem;
+	background:url("../img/关闭.png") no-repeat center center;
+	background-size:100%;
+}*/
+.weatherTip{
+	margin-left:2.6rem;
+	margin-top:0.5rem;
+	max-width: 15rem;
+}
+.weatherTip2{
+	margin-bottom:1rem;
+}
+.weatherTip2>p{
+	margin-right: 0.75rem;
+	font-size:1rem;
+}
+.weatherTip2>.weath2{
+	background:#d8d8d8;
+	border: 1px solid #a8a8a8;
+	width:6rem;
+	height:1.3rem;
+}
+.weatherTip>.table-masg{
+	padding: 0;
+    border-bottom: none;
+}
+.weatherTip>.table-masg>div{
+	margin: 0;
+    width: calc(50% - 1.5rem);
+    padding-left:1.5rem;
+}
+/*==================  滚动条  =====================*/
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 1.8rem;
+    left: 1.25rem;
+    width: calc(100% - 2.5rem);
+    overflow: hidden;
+    height: 7rem;
+}
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+

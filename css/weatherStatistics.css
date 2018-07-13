@@ -1,0 +1,53 @@
+.statisticsTip{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:38.65rem;
+	height:16.0rem;
+	margin-top:-8rem;
+	margin-left:-19.33rem;
+	box-sizing:border-box;
+	border:1px solid #42bfff;
+	background-color:rgba(7,18,29,0.9);
+	z-index:1000;
+	display:none;
+}
+.title{
+	padding:0.9rem;
+	border-bottom:1px solid #3c444e;
+	box-sizing:border-box;
+	background-color:rgba(7,18,29,1);
+}
+.title>h6{
+	padding-left:1.5rem;
+	margin-right:0.5rem;
+	background:url(../img/monitor/列表－站点.png) no-repeat left center;
+	background-size: 0.8rem 0.8rem;
+}
+.f30{
+	font-size:0.75rem;
+}
+.f36{
+	font-size:0.9rem;
+}
+.c95{
+	color:#95cceb;
+}
+.hint{
+	padding:0.9rem;
+}
+#hintMsg{
+	line-height:1.25rem;
+	margin-top:0.25rem;
+}
+#hintMsg>span{
+	color:#ff0000;
+}
+.canvasList{
+	padding:0.9rem 0.9rem 0;
+}
+.canvasList>li{
+	width:6rem;
+	height:6rem;
+	margin-left:1rem;
+}

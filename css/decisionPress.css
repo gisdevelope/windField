@@ -1,0 +1,102 @@
+.content{
+	background: url(../img/bg.png) center/cover;
+}
+#wrapper{
+	width:32.0rem;
+	/*height:calc(100% - 2rem);*/
+	height:100%;
+	position:absolute;
+	/*top:1rem;*/
+	top:0;
+	left:50%;
+	margin-left:-16rem;
+	background-color:#fff;
+	/*overflow: hidden;*/
+	/*box-shadow:2px 3px 2px #fff;*/
+}
+#wrapper>ul{
+	width:32.0rem;
+	/*overflow:hidden;*/
+}
+#wrapper>ul>li{
+	/*width:calc(100% / 3rem);*/
+	/*width:32.0rem;*/
+	height:7.5rem;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	/*float:left;*/
+	margin-top:-1px;
+	/*border-right:none;*/
+	padding:1.5rem;
+	color:#000;
+	position:relative;
+}
+#wrapper>ul>li.act{
+	background: #bedbff;
+}
+#wrapper>ul>li span{
+	width:7rem;
+	height:100%;
+	margin:0 1rem;
+}
+#wrapper>ul>li div.tarClick{
+	position:absolute;
+	left:0;
+	top:0;
+	width:32.0rem;
+	height:100%;
+	cursor:pointer;
+}
+#wrapper>ul>li>div.fl{
+	max-width:calc(100% - 9rem);
+}
+#wrapper>ul>li div>p{
+	font-size:1.2rem;
+}
+#wrapper>ul>li div>i{
+	font-size:0.9rem;
+	color:#999;
+}
+
+.file_right{
+	position:relative;
+	width:calc(100% - 35rem);
+	height:100%;
+	display:none;
+}
+#pop{
+    position: absolute;
+    left: 50%;
+    top:20px;
+    width: 33rem;
+    height:48.0rem;
+    margin-left: -16.5rem;
+    /*z-index:101;*/
+}
+.conterlBox{
+	position: absolute;
+    color: red;
+    right: 30px;
+    bottom: 40px;
+}
+#next{
+	width: 1.1rem;
+    height: 2.05rem;
+    margin-top: -0.55rem;
+    background-size: 1.1rem 2.05rem;
+    position:absolute;
+    top:50%;
+	right: -40px;
+    background-image: url(../img/向右.png);
+}
+#prev{
+	width: 1.1rem;
+    height: 2.05rem;
+    margin-top: -0.55rem;
+    background-size: 1.1rem 2.05rem;
+    position:absolute;
+    top:50%;
+	left: -40px;
+    background-image: url(../img/向左.png);
+    display:none;
+}

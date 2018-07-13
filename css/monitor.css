@@ -1,0 +1,200 @@
+/*===============================  右侧详细数据  ========================*/
+.data-masg{
+	position:absolute;
+	width:38.55rem;
+	right:0.7rem;
+	top:1.95rem;
+	background:rgba(7,18,29,0.9);
+	border:1px solid #42bfff;
+	display:none;
+	z-index: 500;
+}
+.data-masg>span{
+	position:absolute;
+	width:1.175rem;
+	height:1.175rem;
+	background:url('../img/monitor/列表边框装饰.png') no-repeat;
+	background-size:100%;
+}
+.data-masg>.lt{
+	position:absolute;
+	width:1.175rem;
+	height:1.175rem;
+	background:url('../img/monitor/列表边框装饰.png') no-repeat;
+	background-size:100%;
+	left:-0.15rem;
+	top:-0.15rem;
+}
+.data-masg>.rt{
+	right:-0.15rem;
+	top:-0.15rem;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+}
+.data-masg>.lb{
+	left:-0.15rem;
+	bottom:-0.15rem;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+}
+.data-masg>.rb{
+	right:-0.15rem;
+	bottom:-0.15rem;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.head-title{
+	color:#fff;
+	font-size:0.9rem;
+	border-bottom:1px solid #3c444e;
+	position:relative;
+}
+.head-title>h3>i{
+	color:#9a9a9a;
+	font-size:0.75rem;
+	margin-left:0.5rem;
+	margin-top: 0.15rem;
+}
+.head-title>h3,.head-title>div{
+	padding:0.75rem 1.0rem;
+}
+.head-title>h3>b{
+	font-size:0.9rem;
+}
+.head-title>h3>span{
+	width:0.8rem;
+	height:0.8rem;
+	background:url('../img/monitor/列表－站点.png') no-repeat;
+	background-size:100%;
+	margin:0.25rem;
+}
+.head-table>ul{
+	width:100%;
+	height:3.75rem;
+	display:box;
+	display:-webkit-box;
+}
+.head-table>ul>li{
+	-webkit-box-flex:1;
+    box-flex:1;
+    border-right:1px solid #3c444e;
+    padding:0.5rem 1.25rem;
+}
+.head-table>ul>li:last-child{
+	border-right:none;
+}
+.table-list>div{
+	line-height: 1.05rem;
+	margin-bottom:0.5rem;
+}
+.table-list>div:last-child{
+	margin-bottom:0;
+}
+.table-list>div>span{
+	width:1.05rem;
+	height:1.05rem;
+	margin-right:0.75rem;
+}
+.table-list>div>i{
+	width:3.45rem;
+	font-size:0.6rem;
+	color:#9f9f9f;
+	margin-right:0.5rem;
+	white-space:nowrap;
+}
+.table-list>div>b,.cont-table>div>p{
+	font-size:0.75rem;
+	color:#fff;
+}
+.table-list>.degree>span{
+	background:url('../img/monitor/列表－温度.png') no-repeat;
+	background-size: 100%;
+}
+.table-list>.humidity>span{
+	background:url('../img/monitor/列表－相对湿度.png') no-repeat;
+	background-size: 100%;
+}
+.table-list>.precipit>span{
+	background:url('../img/monitor/列表－降水量.png') no-repeat;
+	background-size: 100%;
+}
+.table-list>.precipit>span{
+	background:url('../img/monitor/列表－降水量.png') no-repeat;
+	background-size: 100%;
+}
+.table-list>.visibility>span{
+	background:url('../img/monitor/列表－能见度.png') no-repeat;
+	background-size: 100%;
+}
+.table-list>.direction>span{
+	background:url('../img/monitor/列表－风向风速.png') no-repeat;
+	background-size: 100%;
+}
+.table-list>.pressure>span{
+	background:url('../img/monitor/列表－气压.png') no-repeat;
+	background-size: 100%;
+}
+.cont-title>h6{
+	font-size:0.9rem;
+	color:#95cceb;
+	margin-left:0.5rem;
+	white-space:nowrap;
+}
+.cont-title>span{
+	width:14.8rem;
+	height:0.6rem;
+	background:url('../img/monitor/列表装饰.png');
+	background-size:100%;
+	margin-top:0.3rem;
+}
+.data-cont>ul>li{
+	float:left;
+	box-sizing:border-box;
+	width:19.275rem;
+	border-top:1px solid #42bfff;
+	padding:0.5rem;
+}
+.data-cont>ul>li:nth-child(odd){
+	border-right:1px solid #42bfff;
+}
+.cont-table{
+	display:box;
+	display:-webkit-box;
+	width:100%;
+	padding: 0.3rem;
+}
+.cont-table>div{
+	-webkit-box-flex:1;
+    box-flex:1;
+    border-right:1px solid #3c444e;
+    box-sizing:border-box;
+}
+.cont-table>div:last-child{
+	border-right:none;
+}
+.cont-table>div>div,.cont-table>div>p{
+	margin:0.35rem 0;
+	text-align:center;
+}
+.cont-table>div>div{
+	font-size:0.6rem;
+	color:#9f9f9f;
+
+}
+.curve{
+	width:18.75rem;
+	height:6.0rem;
+	text-align:center;
+	line-height: 5rem;
+}
+.m_marker{
+	background: #ccc;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px #999;
+    border: 1px solid #999;
+    width:16px;
+    height:16px;
+    line-height:10000px;
+    overflow:hidden;
+}

@@ -1,4 +1,4 @@
-/* required styles */
+﻿/* required styles */
 
 .leaflet-pane,
 .leaflet-tile,
@@ -117,7 +117,7 @@
 	pointer-events: none;
 	}
 .leaflet-top {
-	top: 0;
+	bottom: 10px;
 	}
 .leaflet-right {
 	right: 0;

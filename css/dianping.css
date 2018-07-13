@@ -1,0 +1,33 @@
+.contorBox{
+	position: absolute;
+    left: 6.5rem;
+    bottom: 3rem;
+    z-index: 10001;
+}
+.contorBox span{
+	float:left;
+	width:3rem;
+	height:3rem;
+	margin-right:0.5rem;
+}
+.contorBox span.dp_next{
+	background: url(../img/dp_next.png) no-repeat center/cover;
+}
+.contorBox span.dp_next.disab{
+	background: url(../img/disabled_next.png) no-repeat center/cover;
+}
+.contorBox span.dp_prev{
+	background: url(../img/dp_prev.png) no-repeat center/cover;
+}
+.contorBox span.dp_prev.disab{
+	background: url(../img/disabled_prev.png) no-repeat center/cover;
+}
+#video_box,#imgBox{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1001;
+	display:none;
+}

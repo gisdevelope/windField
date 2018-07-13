@@ -1,0 +1,390 @@
+/*============= 头部提示信息 =============*/
+.warning-msg{
+	color:#000;
+	font-size:0.9rem;
+	width:100%;
+	height:2.0rem;
+	text-align:left;
+	line-height:2rem;
+	background:#d2d2d2;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1000;
+	transition: 0.5s all;
+}
+.warning-msg i{
+	color:red;
+}
+#w_list{
+	cursor:pointer;
+	display:none;
+}
+.t_table{
+	height:0;
+	overflow:hidden;
+    position:relative;
+}
+.t_tbody{
+	padding: 0.5rem 1rem;
+    background: #fff;
+    font-size: 0.75rem;
+}
+.t_tbody>ul{
+	border:1px solid #ccc;
+	border-right:none;
+}
+.t_tbody>ul>li{
+	line-height:1.2rem;
+	height:1.2rem;
+	text-align:center;
+	display:-webkit-box;
+    display:box;
+}
+#t_top{
+	padding: 0 1rem;
+}
+.t_tbody>ul>li>div{
+	width:calc(100% / 5);
+	text-align:center;
+	-moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;
+    border-right:1px solid #ccc;
+}
+/*.t_table>ul>li>div:first-child{
+	color:#a25d01;
+}*/
+/*.t_table .t_cT>div:first-child{
+	color:#000;
+}*/
+.t_cT{
+	background:#fafefd;
+}
+.t_cR{
+	background:#fff1f1;
+}
+.t_cO{
+	background:#fff5e8;
+}
+.t_cY{
+	background:#fefbee;
+}
+.t_cB{
+	background:#f0f5ff;
+}
+.t_table .tcR{
+	background:red;
+}
+.t_table .tcO{
+	background:orange;
+} 
+.t_table .tcY{
+	background:yellow;
+} 
+.t_table .tcB{
+	color:#fff;
+	background:blue;
+} 
+.t_btn{
+	margin:0 auto;
+	width:4.45rem;
+	height:0.95rem;
+	background:url('../img/warning/下拉.png') center/cover;
+	cursor:pointer;
+}
+.t_btn.act{
+	background:url('../img/warning/收起.png') center/cover;
+}
+.w_gjj{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:20rem;
+	/*height:30rem;*/
+	margin-top:-15rem;
+	margin-left:-10rem;
+	box-sizing:border-box;
+	border:1px solid #42bfff;
+	background-color:rgba(7,18,29,1);
+	z-index:1000;
+	display: none;
+}
+/*============== 左下角图标 ================*/
+.warning_box{
+	overflow:hidden;
+	/*width:10.7rem;*/
+	width:0;
+	position:absolute;
+	left:3rem;
+	top:0.4rem;
+	height:2.3rem;
+}
+.warning_box>ul{
+	/*width:10.7rem;*/
+}
+.warning_box>ul>li{
+	float:left;
+	width:2.3rem;
+	height:2.3rem;
+	margin-left:0.375rem;
+	text-indent:-300000rem;
+}
+.warning_box>ul>li.act{
+	/*opacity:1;*/
+}
+.warning_box>ul>li.blue{
+	background:url('../img/warning/蓝.png') no-repeat center/cover;
+}
+.warning_box>ul>li.blue.act{
+	background:url('../img/warning/蓝选中.png') no-repeat center/cover;
+}
+.warning_box>ul>li.yellow{
+	background:url('../img/warning/黄.png') no-repeat center/cover;
+}
+.warning_box>ul>li.yellow.act{
+	background:url('../img/warning/黄选中.png') no-repeat center/cover;
+}
+.warning_box>ul>li.orange{
+	background:url('../img/warning/橙.png') no-repeat center/cover;
+}
+.warning_box>ul>li.orange.act{
+	background:url('../img/warning/橙选中.png') no-repeat center/cover;
+}
+.warning_box>ul>li.red{
+	background:url('../img/warning/红.png') no-repeat center/cover;
+}
+.warning_box>ul>li.red.act{
+	background:url('../img/warning/红选中.png') no-repeat center/cover;
+}
+/*============ 弹框信息 ===============*/
+.warning-tip{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:38.65rem;
+	/*height:25.0rem;*/
+	/*margin-top:-12.5rem;*/
+	margin-left:-19.33rem;
+	box-sizing:border-box;
+	border:1px solid #42bfff;
+	background-color:rgba(7,18,29,0.9);
+	z-index:1000;
+	display:none;
+}
+.warning-tip>div{
+	padding:0.9rem;
+}
+.title1{
+	border-bottom:1px solid #3c444e;
+	box-sizing:border-box;
+}
+.f30{
+	font-size:0.75rem;
+}
+.f36{
+	font-size:0.9rem;
+}
+.c8a{
+	color: #8a8989;
+}
+.c95{
+	color:#95cceb;
+}
+.title1>h6{
+	padding-left:1.5rem;
+	margin-right:0.5rem;
+	background:url(../img/monitor/列表－站点.png) no-repeat left center;
+	background-size: 0.8rem 0.8rem;
+}
+.title1>i{
+	margin-top:0.25rem;
+	color: #9a9a9a;
+	margin-left: 1.5rem;
+}
+.title1,.title2{
+	background-color:rgba(7,18,29,1);
+}
+.title2{
+	border-bottom:1px solid #42bfff;
+	box-sizing:border-box;
+}
+.title2>p{
+	width: calc(100% - 6.5rem);
+	line-height:1.5rem;
+}
+.title2>img{
+	width: 5.6rem;
+	height:4.75rem;
+}
+.title3>h6{
+	margin-bottom:0.5rem;
+}
+.title3>p{
+	line-height:1.5rem;
+}
+/*========== 右侧信息 ==============*/
+.warning-left{
+	/*width:20.25rem;*/
+	width:0;
+	height:100%;
+	background-color:rgba(7,18,29,1);
+	position:absolute;
+	right:0;
+	top:0;
+	border-left:1px solid #42bfff;
+	box-sizing:border-box;
+	z-index:1001;
+	transition: 0.5s all;
+}
+.wIcon{
+	height:4.4rem;
+	width:0.95rem;
+	position:absolute;
+	left:-0.95rem;
+	top:50%;
+	margin-top:-2.2rem;
+	background:url(../img/warning/侧面展开.png) center/cover;
+}
+.wIcon.act{
+	background:url(../img/warning/侧面收起.png) center/cover;
+}
+.wcontent{
+	width:20.25rem;/**/
+	height:100%;
+	overflow: hidden;
+}
+.whead{
+	width:calc(100% - 1.0rem);
+	height:3.2rem;
+	margin:0.3rem 0.5rem;
+	border-top:2px solid #276ebc;
+	border-bottom:2px solid #276ebc;
+	padding:0.1rem 0;
+	position:relative;
+}
+.wheadcontent{
+	width:100%;
+	height:calc(100% - 1rem);
+	background:#276ebc;
+	font-size:0.8rem;
+	padding:0.5rem 0;
+	display: -webkit-box;
+}
+.wheadcontent>div{
+	box-flex:1;
+	-webkit-box-flex:1;
+	border-right:1px solid #fff;
+	text-align:1rem;
+	padding:0.5rem 1.0rem;
+	background:url('../img/warning/收起1.png') no-repeat 4.8rem 1rem;
+	background-size:0.8rem 0.425rem;
+}
+.wheadcontent>div.act{
+	background:url('../img/warning/打开.png') no-repeat 4.8rem 1rem;
+	background-size:0.8rem 0.425rem;
+}
+.wheadcontent>div:last-child{
+	border-right:none;
+}
+.wheadTip{
+	width:100%;
+	height:0rem;
+	background:#04293e;
+	position:absolute;
+	left:0;
+	top:3.8rem;
+	overflow:hidden;
+	z-index:100;
+}
+.wTipc{
+	padding:0.45rem;
+}
+.wTipc>ul>li>h6{
+	font-size:0.75rem;
+	color:#276ebc;
+	padding:0.4rem 0;
+	border-bottom:1px solid #276ebc;
+	margin-bottom: 0.5rem;
+}
+.wTipc>ul>li>div>div{
+	width:4rem;
+	margin:0.6rem 0;
+	margin-right:0.6rem;
+	border-radius:0.5rem;
+	text-align: center;
+	box-sizing:border-box;
+	border:1px solid rgba(0,0,0,0);
+}
+#wText>div.act{
+	border:1px solid #276ebc;
+	color:#276ebc;
+}
+.wTipc>ul>li>div>div:nth-child(4n){
+	margin-right:0;
+}
+.wcbody{
+	width:100%;
+	height:calc(100% - 4rem);
+	overflow: hidden;
+	position:relative;
+}
+.wcbody>ul>li,.w_gjj>ul>li{
+	padding:0.75rem;
+	border-bottom:1px solid rgba(255,255,255,0.1);
+	box-sizing:border-box;
+	overflow:hidden;
+}
+.wcbody>ul>li>span,.w_gjj>ul>li>span{
+	width:3.925rem;
+	height:3.325rem;
+	margin-right:0.75rem;
+}
+.wcbody>ul>li>div,.w_gjj>ul>li>div{
+	font-size:0.9rem;
+	width:calc(100% - 3.925rem - 0.75rem);
+}
+.f24{
+	font-size:0.6rem;
+	line-height:1.2rem;
+}
+/*清除覆盖物对话框样式*/
+
+.tdt-infowindow-content{
+	margin:0!important;
+}
+.tdt-infowindow-content-wrapper{
+    background: transparent!important; 
+    box-shadow: 0 0 0 transparent!important; 
+    padding:0!important;
+}
+
+/*============  点击marker样式  ==============*/
+.cmarker{
+	border-radius:0.5rem;
+	width:11rem;
+	background:#fff;
+	padding:0.6rem;
+	padding-right:0.8rem;
+}
+.cmarker .f24{
+	color:#9a9a9a;
+}
+.cmarker img{
+	border:none;
+	width:4rem;
+	margin:0.4rem;
+}
+.cmarker>div>div{
+	width:6rem;
+}
+.cmarker div p{
+	margin:0;
+	padding:0;
+}
+.cmarker div{
+	margin-bottom:0.25rem;
+}
+#wrapper2 .close{
+	margin: 0.5rem;
+}
