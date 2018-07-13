@@ -6,8 +6,8 @@ let url = 'http://scapi.weather.com.cn/weather/getwindmincas?type=1000&test=ncg'
 let oData = {};
 
 //数据处理
-function getData(type){
-    $.getJSON(url,res=>{
+function getData(){
+    $.getJSON('./lib/data.json',res=>{
         parseWindData(res);
     })
     

@@ -1,0 +1,26 @@
+{
+  "name": "windfield",
+  "version": "1.0.0",
+  "description": "全球风场绘制",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --files 'css/*.css, *.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jean1024/windField.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jean1024/windField/issues"
+  },
+  "homepage": "https://github.com/Jean1024/windField#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5"
+  }
+}
